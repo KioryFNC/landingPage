@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Inconsolata:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+
+    --primary: 192 100% 19%;
+    --primary-foreground: 0 0% 94%;
+
+    --secondary: 328 54% 33%;
+    --secondary-foreground: 0 0% 94%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 129 29% 26%;
+    --accent-foreground: 0 0% 94%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 94%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 192 100% 19%;
+
+    --radius: 0.5rem;
+
+    --gradient-start: #80e961;
+    --gradient-end: #00b3ff;
+
+    font-size: 62.5%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 94%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 94%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 94%;
+
+    --primary: 192 100% 19%;
+    --primary-foreground: 0 0% 94%;
+
+    --secondary: 328 54% 33%;
+    --secondary-foreground: 0 0% 94%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 129 29% 26%;
+    --accent-foreground: 0 0% 94%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 94%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 94%;
+
+    --gradient-start: #f0438b;
+    --gradient-end: #8b5cf6;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply font-asap font-normal text-[1.6rem] leading-relaxed text-foreground scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-asap;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-center;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold text-center;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold text-center bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-medium;
+  }
+
+  p,
+  span,
+  a {
+    @apply font-inconsolata text-base md:text-lg leading-relaxed;
+  }
+
+  a {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  a:hover {
+    @apply bg-gradient-primary bg-clip-text text-transparent scale-105;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  .light ::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+  }
+
+  .light ::-webkit-scrollbar-thumb {
+    @apply bg-secondary rounded-full;
+  }
+
+  .light ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    @apply bg-accent rounded-full;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    @apply bg-secondary;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-16 px-4 md:py-24 md:px-8 lg:px-16;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .gradient-border {
+    @apply border-2 border-transparent bg-origin-border relative before:absolute before:inset-0 before:rounded-[inherit] before:-z-10 before:bg-gradient-primary before:p-[2px];
+  }
+}
