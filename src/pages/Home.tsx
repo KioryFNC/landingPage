@@ -1,3 +1,4 @@
+import { AboutSection } from "@/components/AboutSection";
 import { HeroSection } from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
 import React from "react";
@@ -7,6 +8,7 @@ export const Home: React.FC = () => {
     <div>
       <Navbar />
       <HeroSection />
+      <AboutSection />
     </div>
   );
 };
