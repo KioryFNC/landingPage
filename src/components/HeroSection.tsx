@@ -13,11 +13,11 @@ export const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 z-10 py-16">
-        <div className="max-w-4xl mx-auto text-center p-8 rounded-lg bg-background/40 backdrop-blur-sm border border-muted relative before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:bg-[radial-gradient(circle,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_70%)] before:blur-xl before:rounded-full before:transform before:scale-125 before:-z-10">
+        <div className="max-w-4xl mx-auto text-center p-8 rounded-lg  backdrop-blur-sm relative before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:bg-[radial-gradient(circle,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_70%)] before:blur-xl before:rounded-full before:transform before:scale-125 before:-z-10">
           <h1 className="animate-fade-in mb-6 leading-tight">
             Transforme sua visão em{" "}
-            <span className="gradient-text text-5xl md:text-6xl lg:text-7xl font-bold relative">
-              realidade
+            <span className="gradient-text text-5xl md:text-6xl lg:text-8xl font-bold relative">
+              Realidade
             </span>
           </h1>
           <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-10 text-muted-foreground leading-relaxed">
