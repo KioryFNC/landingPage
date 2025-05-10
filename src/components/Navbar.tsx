@@ -45,7 +45,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <a href="#home" className="flex items-center no-underline">
-          <h1 className="text-2xl md:text-3xl font-bold gradient-text">
+          <h1 className="text-3xl md:text-5xl font-bold gradient-text">
             BrandName
           </h1>
         </a>
@@ -56,7 +56,7 @@ export const Navbar = () => {
             <a
               key={item.href}
               href={item.href}
-              className="text-lg font-medium hover:gradient-text transition-all"
+              className="text-xl font-medium hover:gradient-text transition-all"
             >
               {item.title}
             </a>
