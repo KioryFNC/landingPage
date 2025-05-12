@@ -6,7 +6,7 @@ const galleryImages = [
   "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
   "https://images.unsplash.com/photo-1551434678-e076c223a692",
   "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
-  "https://images.unsplash.com/photo-1611224885990-ab7363d7f7cc",
+  "https://images.unsplash.com/photo-1536148935331-408321065b18",
   "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c",
   "https://images.unsplash.com/photo-1518791841217-8f162f1e1131",
 ];
