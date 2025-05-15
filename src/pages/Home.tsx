@@ -1,5 +1,6 @@
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
 import { GallerySection } from "@/components/GallerySection";
 import { HeroSection } from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
@@ -17,6 +18,7 @@ export const Home: React.FC = () => {
       <GallerySection />
       <TestimonialSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 };
